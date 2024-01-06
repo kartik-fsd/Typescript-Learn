@@ -16,6 +16,7 @@ TypeScript is a statically typed superset of JavaScript. It's designed to enhanc
   
 - **Type Inference**: Employs a powerful type inference system that can infer types in many cases without explicit type annotations.
 
+
 ## Data Types in TypeScript
 
 ### Primitive Types
@@ -46,43 +47,36 @@ TypeScript is a statically typed superset of JavaScript. It's designed to enhanc
   
 - **Custom Objects**: Objects created using constructors or classes.
 
-### Example
+
+###
+
+### Example of TypeScript Data Types
 
 ```typescript
-let num: number = 10;
-let name: string = 'John';
-let isDone: boolean = false;
-let n: null = null;
-let u: undefined = undefined;
+### Example of Primitive Types
+let isTrue: boolean = true;
+let age: number = 25;
+let greeting: string = 'Hello, world!';
+let nothing: null = null;
+let notDefined: undefined = undefined;
 let sym: symbol = Symbol('id');
 
-## Non-Primitive Types in TypeScript
-
-In TypeScript, non-primitive types include:
-
-- **Object**: Represents instances through which properties and methods can be accessed.
-  ```typescript
-  let obj: object = { key: 'value' };
-Array: A special object used to store a list of elements.
-
-typescript
-Copy code
-let arr: number[] = [1, 2, 3];
-Function: A callable object that executes a block of code.
-
-typescript
-Copy code
-let func: Function = () => {
-    console.log('Function called');
+let user: object = { name: 'John', age: 30 };
+let numbers: number[] = [1, 2, 3, 4, 5];
+let sayHello: Function = () => {
+    console.log('Hello!');
 };
-Date: Represents dates and times.
+let currentDate: Date = new Date();
+let regexPattern: RegExp = /[a-zA-Z]+/;
 
-typescript
-Copy code
-let date: Date = new Date();
-RegExp: Represents regular expressions for pattern matching.
 
-typescript
-Copy code
-let regex: RegExp = /[a-z]+/;
+### Example of Non-Primitive Types
 
+```typescript
+let user: object = { name: 'John', age: 30 };
+let numbers: number[] = [1, 2, 3, 4, 5];
+let sayHello: Function = () => {
+    console.log('Hello!');
+};
+let currentDate: Date = new Date();
+let regexPattern: RegExp = /[a-zA-Z]+/;
